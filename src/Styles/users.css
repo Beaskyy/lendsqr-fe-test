@@ -1,0 +1,101 @@
+.users {
+  margin-top: 100px;
+}
+.users h4 {
+  color: #213F7D;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 32px;
+}
+.users .user {
+  padding-left: 10px;
+}
+.users .user span {
+  color: #545F7D;
+  padding-top: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+}
+.users .user h3 {
+  padding-top: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #213F7D;
+}
+
+.card {
+  border: 1px solid rgba(33, 63, 125, 0.06) !important;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px !important;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+th button {
+  width: 98px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.reset {
+  border: 1px solid #545F7D;
+  background-color: transparent;
+  color: #545F7D;
+  font-size: 14px;
+  font-weight: 600;
+}
+.reset:hover {
+  background-color: #545F7D;
+  color: #ffffff;
+}
+
+.filter {
+  width: 98px;
+  height: 40px;
+  border: none;
+  background-color: #39CDCC;
+  color: white;
+}
+.filter:hover {
+  filter: brightness(0.9);
+}
+
+.text-active {
+  color: #39CD62;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-inactive {
+  color: #545F7D;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-pending {
+  color: #E9B200;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-blacklisted {
+  color: #E4033B;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.view details {
+  background-color: #39CDCC !important;
+  cursor: pointer;
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}/*# sourceMappingURL=users.css.map */

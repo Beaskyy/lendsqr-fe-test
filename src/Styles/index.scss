@@ -1,0 +1,134 @@
+// Google fonts
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "../Styles/color";
+@import "../Styles/variables";
+@import "../Styles/navbar.scss";
+@import "../Styles/table";
+@import "../Styles/user-details.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif !important;
+  // background-color: #e5e5e5 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: $primary !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f7f7f7;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $info;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary;
+}
+
+.welcome {
+  h1 {
+    color: $primary;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  p {
+    font-weight: 400;
+    color: $info;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  input {
+    border: none;
+    height: 50px;
+    background-color: $white !important;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: $border-radius-sm;
+  }
+  small {
+    transform: translate(-20px, -30px);
+    color: $secondary;
+    font-weight: 600;
+    font-size: 12px;
+    width: 30px;
+    &:hover {
+      cursor: pointer;
+      filter: brightness(0.9);
+    }
+  }
+  span {
+    color: $secondary;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  button {
+    @include buttonStyle();
+    height: 48px;
+    width: 100%;
+    border-radius: $border-radius-md !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.main {
+  display: flex;
+  .left {
+    width: 17%;
+    background-color: $white;
+    // height: 100vh;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  }
+  .main-page {
+    width: 83%;
+  }
+}
+
+.dots {
+  cursor: pointer;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 170% !important;
+  left: -22px !important;
+}
+
+// meida query
+@media only screen and (max-width: 992px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    display: none;
+  }
+  .main-page {
+    width: 100%;
+  }
+}
+
+.active > .page-link {
+  background-color: $secondary !important;
+  color: $primary !important;
+}

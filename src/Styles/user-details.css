@@ -1,0 +1,123 @@
+.user-details {
+  margin-top: 100px;
+  padding: 32px 0 !important;
+}
+.user-details .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.user-details .details h4 {
+  color: #213F7D;
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 32px;
+}
+.user-details .details button {
+  background-color: transparent;
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 22px;
+  width: 170px;
+  border-radius: 8px;
+}
+.user-details .details .blacklist-user {
+  border: 1px solid #E4033B;
+  color: #E4033B;
+}
+.user-details .details .blacklist-user:hover {
+  background-color: #E4033B;
+  color: #ffffff;
+}
+.user-details .details .activate-user {
+  border: 1px solid #39CDCC;
+  color: #39CDCC;
+}
+.user-details .details .activate-user:hover {
+  background-color: #39CDCC;
+  color: #ffffff;
+}
+.user-details .general {
+  margin-top: 25px;
+  transform: translateY(13px);
+}
+.user-details .general .col-md-2 .details {
+  display: flex;
+  justify-content: center;
+  color: #39CDCC;
+  border-bottom: 2px solid #39CDCC;
+}
+.user-details .general .col-md-2 .general-details span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  padding-bottom: 7px;
+}
+.user-details .general .col-md-2 .general-details:hover {
+  cursor: pointer;
+  color: #39CDCC !important;
+  border-bottom: 2px solid #39CDCC;
+}
+.user-details .name h5 {
+  color: #213F7D;
+  font-size: 22px;
+  font-weight: 500;
+}
+.user-details .name small {
+  color: #545F7D;
+  font-size: 14px;
+  font-weight: 400;
+}
+.user-details .tier {
+  border-right: 1px solid #545F7D;
+  border-left: 1px solid #545F7D;
+}
+.user-details .tier h5 {
+  color: #213F7D;
+  font-size: 14px;
+  font-weight: 600;
+}
+.user-details .tier small {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  color: #E9B200;
+}
+.user-details .amount h5 {
+  color: #213F7D;
+  font-size: 22px;
+  font-weight: 500;
+}
+.user-details .amount small {
+  color: #213F7D;
+  font-size: 14px;
+  font-weight: 400;
+}
+.user-details .info h5 {
+  color: #213F7D;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.user-details .info h6 {
+  color: #545F7D;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.user-details .info p {
+  color: #545F7D;
+  font-size: 16px;
+  font-weight: 600;
+}
+.user-details .info hr {
+  margin: 12px 0 0 0px;
+}
+
+@media only screen and (max-width: 992px) {
+  .general {
+    display: none;
+  }
+}/*# sourceMappingURL=user-details.css.map */

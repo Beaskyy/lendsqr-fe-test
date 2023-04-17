@@ -1,0 +1,30 @@
+$border-radius-md: 8px;
+$border-radius-sm: 5px;
+
+// mixins
+
+@mixin buttonStyle() {
+  display: inline-block;
+  border: none;
+  background-color: $secondary;
+  padding: 10px;
+  color: $white;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+
+@mixin btn() {
+  padding: 7px 18px;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  &:hover {
+    filter: brightness(0.9);
+  }
+}

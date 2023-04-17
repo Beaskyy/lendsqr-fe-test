@@ -1,0 +1,43 @@
+@import "./color";
+
+.sidebar {
+  margin-top: 100px;
+  padding-bottom: 5ave0px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: $primary;
+    padding: 10px;
+    transition: 100ms all ease;
+    &:hover {
+      background-color: rgba(#39cdcc, 0.06);
+        border-left: 3px solid #39cdcc;
+      cursor: pointer;
+    }
+  }
+  .side-header {
+    h6 {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 10px 15px;
+      margin-top: 20px;
+    }
+    small {
+      display: block;
+      padding: 10px;
+      &:hover {
+        background-color: rgba(#39cdcc, 0.06);
+        border-left: 3px solid #39cdcc;
+        cursor: pointer;
+      }
+    }
+  }
+  hr {
+    color: $primary;
+  }
+}
+
+

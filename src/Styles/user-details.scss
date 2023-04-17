@@ -1,0 +1,136 @@
+@import "../Styles/color";
+@import "../Styles/variables";
+
+.user-details {
+  margin-top: 100px;
+  padding: 32px 0 !important;
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    h4 {
+      color: $primary;
+      font-size: 24px;
+      font-weight: 500;
+      padding-top: 32px;
+    }
+    button {
+      background-color: transparent;
+      margin: 0 10px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 22px;
+      width: 170px;
+      border-radius: $border-radius-md;
+    }
+    .blacklist-user {
+      border: 1px solid $danger;
+      color: $danger;
+      &:hover {
+        background-color: $danger;
+        color: $white;
+      }
+    }
+    .activate-user {
+      border: 1px solid $secondary;
+      color: $secondary;
+      &:hover {
+        background-color: $secondary;
+        color: $white;
+      }
+    }
+  }
+  .general {
+    margin-top: 25px;
+    transform: translateY(13px);
+    .col-md-2 {
+      .details {
+        display: flex;
+        justify-content: center;
+        color: $secondary;
+        border-bottom: 2px solid $secondary;
+      }
+      .general-details {
+        span {
+          font-size: 16px;
+          font-weight: 400;
+          color: #000000;
+          padding-bottom: 7px;
+        }
+        &:hover {
+          cursor: pointer;
+          color: $secondary !important;
+        border-bottom: 2px solid $secondary;
+        }
+      }
+    }
+  }
+  .name {
+    h5 {
+      color: $primary;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    small {
+      color: $info;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .tier {
+    border-right: 1px solid $info;
+    border-left: 1px solid $info;
+    h5 {
+      color: $primary;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    small {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 16px;
+      color: $warning;
+    }
+  }
+  .amount {
+    h5 {
+      color: $primary;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    small {
+      color: $primary;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  .info {
+    h5 {
+      color: $primary;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 30px 0;
+    }
+    h6 {
+      color: $info;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    p {
+      color: $info;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    hr {
+      margin: 12px 0 0 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .general {
+    display: none;
+  }
+}

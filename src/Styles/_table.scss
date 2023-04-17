@@ -1,0 +1,43 @@
+
+th {
+  color: $info;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 21px 0;
+}
+
+tr {
+  td {
+    color: $info;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 21px 5px !important;
+  }
+}
+
+.btn-inactive {
+  @include btn();
+  color: $inactive;
+  background-color: rgba($inactive, 0.06)
+}
+.btn-active {
+  @include btn();
+  color: $active;
+  background-color: rgba($active, 0.06)
+}
+.btn-pending {
+  @include btn();
+  color: $pending;
+  background-color: rgba($pending, 0.1)
+}
+.btn-blacklisted {
+  @include btn();
+  color: $blacklisted;
+  background-color: rgba($blacklisted, 0.1)
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: $info;
+}

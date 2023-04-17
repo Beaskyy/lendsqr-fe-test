@@ -1,0 +1,37 @@
+.sidebar {
+  margin-top: 100px;
+  padding-bottom: 5ave0px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.sidebar p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #213F7D;
+  padding: 10px;
+  transition: 100ms all ease;
+}
+.sidebar p:hover {
+  background-color: rgba(57, 205, 204, 0.06);
+  border-left: 3px solid #39cdcc;
+  cursor: pointer;
+}
+.sidebar .side-header h6 {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+.sidebar .side-header small {
+  display: block;
+  padding: 10px;
+}
+.sidebar .side-header small:hover {
+  background-color: rgba(57, 205, 204, 0.06);
+  border-left: 3px solid #39cdcc;
+  cursor: pointer;
+}
+.sidebar hr {
+  color: #213F7D;
+}/*# sourceMappingURL=sidebar.css.map */
