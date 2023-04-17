@@ -345,8 +345,8 @@ a {
   cursor: pointer;
   filter: brightness(0.9);
 }
-.welcome span {
-  color: #39CDCC;
+.welcome a {
+  color: #39CDCC !important;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -402,6 +402,10 @@ a {
   }
   .main-page {
     width: 100%;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0px;
   }
 }
 .active > .page-link {

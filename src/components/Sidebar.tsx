@@ -180,7 +180,10 @@ const Sidebar = (props: Props) => {
         <div className="side-header">
           <hr />
           <Link to="/login">
-            <small className="mt-1" onClick={() => sessionStorage.clear()}>
+            <small
+              className="mt-1"
+              onClick={() => (window.location.href = "/")}
+            >
               <img src={logout} alt="logout" className="mx-2" />
               Logout
             </small>
@@ -188,9 +191,7 @@ const Sidebar = (props: Props) => {
         </div>
       </div>
       <div></div>
-      <p className="mb-5 mt-3 mx-2">
-        v.1.2.0
-      </p>
+      <p className="mb-5 mt-3 mx-2">v.1.2.0</p>
     </div>
   );
 };

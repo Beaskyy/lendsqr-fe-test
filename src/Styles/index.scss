@@ -75,8 +75,8 @@ a {
       filter: brightness(0.9);
     }
   }
-  span {
-    color: $secondary;
+  a {
+    color: $secondary !important;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.1em;
@@ -126,6 +126,10 @@ a {
   .main-page {
     width: 100%;
   }
+  /* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
 }
 
 .active > .page-link {

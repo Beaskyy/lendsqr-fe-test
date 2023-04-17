@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/images/Group.svg";
 import pablo from "../assets/images/pablo-sign-in 1.svg";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -17,7 +18,7 @@ const Login = (props: Props) => {
 
     const logIn = JSON.stringify(isLoggedIn);
     sessionStorage.setItem("isLoggedIn", logIn);
-    window.location.href = "/";
+    window.location.href = "/dashboard";
   };
 
   return (
@@ -61,7 +62,7 @@ const Login = (props: Props) => {
                   </div>
                 </div>
               </div>
-              <span>FORGOT PASSWORD?</span>
+              <Link to="/reset-password">FORGOT PASSWORD?</Link>
               <button type="submit">LOG IN</button>
             </form>
           </div>

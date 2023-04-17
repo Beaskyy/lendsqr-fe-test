@@ -7,9 +7,8 @@ import { HiBars3BottomRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
-type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <nav
       className="navbar navbar-expand-lg bg-white fixed-top"
@@ -19,7 +18,7 @@ const Navbar = (props: Props) => {
       }}
     >
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">
+        <Link to="/dashboard" className="navbar-brand">
           <img src={logo} alt="logo" className="img-fluid" />
         </Link>
         <button
@@ -70,7 +69,7 @@ const Navbar = (props: Props) => {
                 </a>
                 <ul className="dropdown-menu">
                   <li onClick={() => sessionStorage.clear()}>
-                    <a className="dropdown-item" href="/Login">
+                    <a className="dropdown-item" href="/">
                       Logout
                     </a>
                   </li>
